@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SHOW RESULTS </title>
+<!--  <link rel="stylesheet" type="text/css" href="bootstrap.css"> -->
+  <link rel="stylesheet" type="text/css" href="app.css">
+
+</head>
+<body>
+	<nav class="navbar navbar-default" style="background-color: #3333ff">
+		<div class="container-fluid">
+		  <div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			  <span class="sr-only">Toggle navigation</span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="home" style="color: white;">RESULT VIEWER</a>
+		  </div>
+		  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right" >
+			  <li class="active"><a href="slo" style="color: white;background-color: #3333ff">STUDENTS<span class="sr-only">(current)</span></a></li>
+			  <li class="active"><a href="tlo" style="color: white;background-color: #3333ff">TEACHERS<span class="sr-only">(current)</span></a></li>
+			  <li class="active"><a href="abcd" style="color: white;background-color: #3333ff">HOME<span class="sr-only">(current)</span></a></li>
+			</ul>
+		  </div>
+		</div>
+	  </nav>
+
+<div class="container">
+  <div class="jumbotron" style="background-color: orange">
+    <h1>RESULT</h1>
+  </div>
+  <div>
+      <h1>
+          Name of student: <%=ans[0].name%>
+      </h1>
+      <h1>
+        Roll.NO of student: <%=ans[0].rollNumber%>
+    </h1>
+    <h1>
+        Class of student: <%=ans[0].class%>
+    </h1>
+  </div>
+  <br>
+<table  border="2px" width="900" height="400" style="text-align: center">
+	<thead>
+		<tr>
+			<th>Subject</th>
+			<th>Total Marks</th>
+			<th>Min Marks</th>
+			<th>Obtained Marks</th>
+		</tr>
+	</thead>
+	<tbody >
+		<tr>
+			<td>Physics</td>
+			<td>100</td>
+			<td>35</td>
+			<td><%=ans[0].physics%></td>
+		</tr>
+		<tr>
+			<td>Chemistry</td>
+			<td>100</td>
+			<td>35</td>
+			<td><%=ans[0].chemistry%></td>
+		</tr>
+		<tr>
+			<td>Maths</td>
+			<td>100</td>
+			<td>35</td>
+			<td><%=ans[0].maths%></td>
+        </tr>
+        <tr>
+			<td>English</td>
+			<td>100</td>
+			<td>35</td>
+			<td><%=ans[0].english%></td>
+        </tr>
+        <tr>
+			<td>Physcial</td>
+			<td>100</td>
+			<td>35</td>
+			<td><%=ans[0].physcial%></td>
+        </tr>
+        <tr>
+			<td>Computer</td>
+			<td>100</td>
+			<td>35</td>
+			<td><%=ans[0].computer%></td>
+        </tr>
+        <tr>
+			<td></td>
+			<td></td>
+			<td>Total Marks</td>
+			<td><%=ans[0].total%></td>
+		</tr>
+	</tbody>
+
+</table>
+</div>>
+</body>
+</html>

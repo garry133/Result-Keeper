@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ADD RESULTS </title>
+<!--  <link rel="stylesheet" type="text/css" href="bootstrap.css"> -->
+  <link rel="stylesheet" type="text/css" href="app.css">
+
+</head>
+<body>
+
+  <nav class="navbar navbar-default" style="background-color: #3333ff">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="home" style="color: white;">RESULT VIEWER</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right" >
+          <li class="active"><a href="slo" style="color: white;background-color: #3333ff">STUDENTS<span class="sr-only">(current)</span></a></li>
+          <li class="active"><a href="tlo" style="color: white;background-color: #3333ff">TEACHERS<span class="sr-only">(current)</span></a></li>
+          <li class="active"><a href="abcd" style="color: white;background-color: #3333ff">HOME<span class="sr-only">(current)</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<div class="container">
+  <div class="jumbotron" style="background-color: orange">
+    <h1>WELCOME TO ADD A RESULT</h1>
+    <p>Please fill the form below </p>
+  </div>
+<!--  .form-group
+  .form-control -->
+
+  <form method="POST" action="ad" >
+    <div class="form-group">
+      <label for="name">Student Name</label>
+      <input type="text" name="name" class="form-control" placeholder="student name" required="text">
+    </div>
+    <div class="form-group">
+      <label for="class">Class</label>
+      <input type="Number" name="class" class="form-control" placeholder="class" required="Number">
+    </div>
+    <div class="form-group">
+      <label for="rollNumber">Roll Number</label>
+      <input type="Number" name="rollNumber" class="form-control" placeholder="rollNumber" required="Number">
+    </div>
+
+
+    <div class="form-group">
+      <label for="physics">Physics Marks</label>
+      <input type="Number" name="physics" class="form-control" placeholder="Physics Marsk" required="Number">
+    </div>
+    <div class="form-group">
+      <label for="chemistry">Chemistry Marks</label>
+      <input type="Number" name="chemistry" class="form-control" placeholder="Chemistry Marks" required="Number">
+    </div>
+    <div class="form-group">
+      <label for="maths">Maths Marks</label>
+      <input type="Number" name="maths" class="form-control" placeholder="Maths Marks" required="Number">
+    </div>
+    <div class="form-group">
+      <label for="english">English Marks</label>
+      <input type="Number" name="english" class="form-control" placeholder="English Marks" required="Number">
+    </div>
+    <div class="form-group">
+      <label for="physcial">Physical Marks</label>
+      <input type="Number" name="physcial" class="form-control" placeholder="Physcial Marks" required="Number">
+    </div>
+    <div class="form-group">
+      <label for="computer">Computer Marks</label>
+      <input type="Number" name="computer" class="form-control" placeholder="Computer Marks" required="Number">
+    </div>
+    <div class="form-group">
+        <label for="total">Total Marks</label>
+        <input type="Number" name="total" class="form-control" placeholder="Total Marks" required="Number">
+      </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</body>
+</html>
